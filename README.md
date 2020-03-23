@@ -1,16 +1,17 @@
 # IntroductionToJavaScript
+:atom:
 
 JavaScript docs:<br/>
 [Mozilla] https://developer.mozilla.org/en-US/docs/Web/JavaScript<br/>
 
 VSCode shortcuts:<br/>
 [Visual Studio] https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf<br/>
-All codes: (Ctrl + K & Ctrl + S)<br/>
-Format code: (Shift + Alt + F)<br/>
-Comment: (Shift + Alt + A)<br/>
-Uncomment: (Ctrl + K & Ctrl + U)<br/>
+ * All codes: (Ctrl + K & Ctrl + S)<br/>
+ * Format code: (Shift + Alt + F)<br/>
+ * Comment: (Shift + Alt + A)<br/>
+ * Uncomment: (Ctrl + K & Ctrl + U)<br/>
 
-#Lesson 1
+###Lesson 1
 
 The vast majority of Web pages out there right now contain some JavaScript code.<br/>
 JavaScript code is executed in the Web browser.<br/>
@@ -26,7 +27,7 @@ method(parameters)<br/>
 
 JavaScript is case-sensitive<br/>
 
-#Lesson 2
+###Lesson 2
 
 Events are things that happen while a person is viewing and interacting with the page.<br/>
 The act of taking control of exactly what happens in response to some event is called event handling.<br/>
@@ -50,9 +51,11 @@ Events:
 * ondblclick
 
 Basic syntax of JavaScript methods:<br/>
-function name(){<br/>
-//code<br/>
+```javascript
+function name(){
+//code
 }
+```
 
 Debugging JavaScript:<br/>
 The browser will always try to execute your JavaScript code.<br/>
