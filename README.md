@@ -64,3 +64,58 @@ You can set breakpoints in the JavaScript code.
 
 Enable JavaScript:<br/>
 https://www.enable-javascript.com/
+
+### Lesson 3
+
+JavaScript is object-oriented<br/>
+It's designed to allow you to treat a Web page as though it were a collection of actual objects in the real world.
+
+Document Object Model (DOM)<br/>
+DOM is essentially a set of rules and words you use to access and manipulate things on a Web page.<br/>
+DOM defines the names used to refer to many aspects of the environment in which a Web page is showing.<br/>
+A Web page is a document.<br/>
+The DOM represents that same document so it can be manipulated.<br/>
+Which can be modified with a scripting language such as JavaScript.
+
+Objects:<br/>
+ * screen
+ * window
+ * navigator
+ * location
+ * document
+
+Different objects in the object model have different properties and methods.<br/>
+Properties are characteristics of the object.<br/>
+Methods are things that the object can do.
+
+Basic syntax of JavaScript properties:<br/>
+```javascript
+object.property
+```
+
+Control refers to any element on the page with which a user can interact.
+
+Textbox control:<br/>
+```html
+<label for="username">Enter Username:</label>
+<input type="text" id="username">
+```
+
+Button control:<br/>
+```html
+<input type="button" value="Go" onclick="alert('Hello ' + document.getElementById('username').value)" >
+```
+
+A literal is a value that never changes<br/>
+A variable is a value that can vary
+
+Variable name rules:<br/>
+ * must start with a letter or an underscore character
+ * after the first character, the name can contain any letters, numbers, an underscore, or a hyphen
+ * cannot contain blank spaces
+ * only punctuation characters allowed are the hyphen and underscore
+ * cannot be a reserved word
+
+
+
+
