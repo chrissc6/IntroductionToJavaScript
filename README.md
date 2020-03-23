@@ -11,7 +11,7 @@ VSCode shortcuts:<br/>
  * Comment: (Shift + Alt + A)<br/>
  * Uncomment: (Ctrl + K & Ctrl + U)<br/>
 
-###Lesson 1
+### Lesson 1
 
 The vast majority of Web pages out there right now contain some JavaScript code.<br/>
 JavaScript code is executed in the Web browser.<br/>
@@ -27,7 +27,7 @@ method(parameters)<br/>
 
 JavaScript is case-sensitive<br/>
 
-###Lesson 2
+### Lesson 2
 
 Events are things that happen while a person is viewing and interacting with the page.<br/>
 The act of taking control of exactly what happens in response to some event is called event handling.<br/>
