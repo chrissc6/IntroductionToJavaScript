@@ -4,13 +4,13 @@ JavaScript docs:<br/>
 [Mozilla] https://developer.mozilla.org/en-US/docs/Web/JavaScript<br/>
 
 VSCode shortcuts:<br/>
-[Visual Studio]https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf<br/>
+[Visual Studio] https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf<br/>
 All codes: (Ctrl + K & Ctrl + S)<br/>
 Format code: (Shift + Alt + F)<br/>
 Comment: (Shift + Alt + A)<br/>
 Uncomment: (Ctrl + K & Ctrl + U)<br/>
 
-#Lesson 1<br/>
+#Lesson 1
 
 The vast majority of Web pages out there right now contain some JavaScript code.<br/>
 JavaScript code is executed in the Web browser.<br/>
@@ -26,7 +26,7 @@ method(parameters)<br/>
 
 JavaScript is case-sensitive<br/>
 
-#Lesson 2<br/>
+#Lesson 2
 
 Events are things that happen while a person is viewing and interacting with the page.<br/>
 The act of taking control of exactly what happens in response to some event is called event handling.<br/>
@@ -43,7 +43,7 @@ In inline JavaScript, the outermost quotation marks after the event handler shou
 
 Each line of code in a JavaScript can end in a line break, or a semicolon, or both.
 
-Events:<br/>
+Events:
 *onmouseover
 *onclick
 *oncontextmenu
