@@ -44,10 +44,10 @@ In inline JavaScript, the outermost quotation marks after the event handler shou
 Each line of code in a JavaScript can end in a line break, or a semicolon, or both.
 
 Events:
-*onmouseover
-*onclick
-*oncontextmenu
-*ondblclick
+* onmouseover
+* onclick
+* oncontextmenu
+* ondblclick
 
 Basic syntax of JavaScript methods:<br/>
 function name(){<br/>
