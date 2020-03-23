@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>if tests</title>
+</head>
+
+<body>
+    <script>
+        //Create a Boolean variable and give it a value.
+        var condition = true;
+        //Use the variable as a test condition.
+        if (condition) document.write("Condition is true");
+
+        document.write("<br>")
+
+        var condition2 = false;
+        if (!condition2) {
+            document.write("Condition is false");
+            document.write(" test");
+        }
+
+        document.write("<br>")
+
+        if (condition) {
+            document.write("Condition is true");
+            document.write(" test");
+        } else {
+            document.write("Condition is false");
+            document.write(" test");
+        }
+
+        document.write("<br>")
+
+        if (condition2) {
+            document.write("Condition2 is true");
+        } else if (condition) {
+            document.write("Condition is true");
+        } else {
+            document.write("test");
+        }
+
+        document.write("<br>")
+
+        var age = 17
+        if (age >= 18) {
+            document.write("You are an adult")
+        } else {
+            document.write("You are a minor")
+        }
+    </script>
+
+    <br>
+
+    <script>
+        //Create a number variable and give it a value.
+        var age = 65
+        //Use the variable as a test condition.
+        if (age <= 12) {
+            document.write("Child fare")
+        } else if (age > 12 && age < 60) {
+            document.write("Adult fare")
+        } else {
+            document.write("Senior discount")
+        }
+    </script>
+</body>
+
+</html>

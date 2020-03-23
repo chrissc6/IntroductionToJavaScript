@@ -77,7 +77,7 @@ A Web page is a document.<br/>
 The DOM represents that same document so it can be manipulated.<br/>
 Which can be modified with a scripting language such as JavaScript.
 
-Objects:<br/>
+Objects:
  * screen
  * window
  * navigator
@@ -95,7 +95,7 @@ object.property
 
 Control refers to any element on the page with which a user can interact.
 
-Textbox control:<br/>
+Textbox control:
 ```html
 <label for="username">Enter Username:</label>
 <input type="text" id="username">
@@ -109,13 +109,60 @@ Button control:<br/>
 A literal is a value that never changes<br/>
 A variable is a value that can vary
 
-Variable name rules:<br/>
+Variable name rules:
  * must start with a letter or an underscore character
  * after the first character, the name can contain any letters, numbers, an underscore, or a hyphen
  * cannot contain blank spaces
  * only punctuation characters allowed are the hyphen and underscore
  * cannot be a reserved word
 
+### Lesson 4
 
+Strings:<br/>
+You can actually store anything as a string.<br/>
+Unless you want to perform arithmetic (or date arithmetic).
+```javascript
+var name="Hello string"
+```
 
+Numbers:<br/>
+Numbers in JavaScript (and all programming languages) are quantities. (scalar values)<br/>
+The term "scalar" comes from linear algebra, where it is used to differentiate a single number from a vector or matrix.<br/>
+Which you can perform arithmetic calculations.<br/>
+You can only do arithmetic with numbers.<br/>
+You can store an invalid number as a string.<br/>
+You can't store ZIP codes, Social Security numbers, or phone numbers as numbers, but they're not true numbers in the sense of being scalar values.<br/>
 
+Number rules:
+ * can contain digits (0-9) and one decimal point (period)
+ * the first character in front of the number can be a hyphen to indicate a negative number
+ * cannot contain commas, spaces, parentheses, embedded hyphens, or dollar signs
+ * never use quotation marks with numbers
+
+toFixed( ) Function:
+```javascript
+number.toFixed( value )
+```
+Used to format a number using fixed-point notation.
+
+Dates:<br/>
+You can also do date arithmetic (date x days from now, the number of days between two dates)
+```javascript
+var name = new Date(1999,0-11,1-31)
+var halloween = new Date("October 31 2013")
+var valentines = new Date("February 14 2015 18:35:00")
+```
+
+When you get down to the level of the actual CPU that's doing the math and managing the lists, it's actually more efficient to use zero-based lists, which in turn make the code run faster.
+
+Boolean Values:<br/>
+If you assign a value other than true or false, the value you assign will be converted to true or false.<br/>
+Any text in quotation marks to a Boolean value will set the value to true.<br/>
+False values: (0, -0, null, "", undefined, NaN), any other value will set the value to true.
+
+if Statements:<br/>
+if must be typed in lowercase.
+
+```javascript
+if (condition) code to execute;
+```
