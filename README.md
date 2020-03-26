@@ -283,3 +283,85 @@ assign a value<br/>
 must be a valid attribute for the tag type
 value:<br/>
 value you want to assign to the attribute
+
+### Lesson 6
+
+Global Variables<br/>
+defined outside of functions<br/>
+they can be used by any function without passing them to the function as parameters<br/>
+a variable that is declared in the global scope<br/>
+a variable that is visible from all other scopes
+
+Local Variable<br/>
+defined within functions<br/>
+They have local scope, which means that they can only be used within the functions that define them.
+
+Scope (lifespan)<br/>
+The current context of execution<br/>
+The context in which values and expressions are "visible" or can be referenced.<br/>
+The scope of a variable defines what other code on the page can access the contents of a variable. 
+
+Variables and the values assigned to them are stored in memory (RAM).<br/>
+You'd need to create thousands of variables in a single page for them to have any noticeable impact on the speed or memory of modern devices.
+
+indexOf method<br/>
+finding the starting point of a small string contained within a larger string<br/>
+value returned by the indexOf method is -1 if smallstring doesn't exist in the larger string at all<br/>
+location is zero-based
+```javascript
+largestring.indexOf(smallstring)
+```
+
+substring<br/>
+method returns the part of the string between the start and end indexes, or to the end of the string.
+```javascript
+string.substr(startposition,length)
+
+const str = 'Mozilla';
+
+console.log(str.substring(1, 3));
+// expected output: "oz"
+
+console.log(str.substring(2));
+// expected output: "zilla"
+```
+
+slice<br/>
+method returns a shallow copy of a portion of an array into a new array object selected from begin to end <br/>
+(end not included) where begin and end represent the index of items in that array.
+```javascript
+string.slice(start)
+```
+
+parseInt(string)<br/>
+Returns the integer portion of string as a number (if possible)<br/>
+integer always a whole number with no decimal point<br/>
+parseInt function always truncates the decimal portion of a number. <br/>
+It never rounds numbers
+
+parseFloat(string)<br/>
+Returns the floating point portion of a string as a number (if possible)<br/>
+floating point number can have a decimal portion
+
+the string can only be converted to a number if the string starts with a numeric digit (0-9), a hyphen (minus sign), or a dot (decimal point)<br/>
+If the string to convert can't be converted to a number, then the function returns NaN, which means "not a number."
+
+Converting Numbers to String<br/>
+toString() method returns a string representing the specified Number object
+```javascript
+function hexColour(c) {
+  if (c < 256) {
+    return Math.abs(c).toString(16);
+  }
+  return 0;
+}
+
+console.log(hexColour(233));
+// expected output: "e9"
+
+console.log(hexColour('11'));
+// expected output: "b"
+```
+
+You can also concatenate, with a + sign, the number to some string. <br/>
+It can even be an empty string
