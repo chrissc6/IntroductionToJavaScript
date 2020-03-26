@@ -365,3 +365,98 @@ console.log(hexColour('11'));
 
 You can also concatenate, with a + sign, the number to some string. <br/>
 It can even be an empty string
+
+### Lesson 8
+
+Arrays <br/>
+a list of items<br/>
+Arrays are list-like objects whose prototype has methods to perform traversal and mutation operations. <br/>
+Neither the length of a JavaScript array nor the types of its elements are fixed.<br/>
+it must start with a letter and cannot contain spaces or special characters<br/>
+Make reference to an array element with a subscript (sub) in square brackets.<br/>
+starting at 0 (zero) with the first item on the left<br/>
+For a multidimensional array, specify additional subscripts.
+```javascript
+var color = new Array();
+color[0]="Red";
+color[1]="Green";
+color[2]="Blue";
+
+var color2=new Array("Red","Green","Blue");
+
+var color3 = new Array();
+var color3=["Red","Green","Blue"];
+```
+
+Array Length<br/>
+returns a number indicating how many elements are in the array.
+```javascript
+arrayname.length
+```
+
+Array Sort()<br/>
+organizes the elements into ascending order (alphabetical order)
+
+Array Reverse()<br/>
+reverses whatever order elements happen to be in at the moment<br/>
+If you apply a .reverse() right after a .sort(), you'll get a descending sort order, Z-A. 
+
+For Loops<br/>
+repeating a loop a predetermined number of times
+```javascript
+for (start; condition; increment) {
+ code to be executed
+}
+``` 
+You can use ++ to increment the value by one, or -- to decrement the value by 1.
+
+While Loops<br/>
+loops repeat one or more lines of code as long as some condition remains true
+```javascript
+while (condition) {
+ code to be executed
+}
+```
+
+do while loop
+```javascript
+do {
+ code to be executed
+} while (condition)
+```
+
+Switch Statement
+```javascript
+switch(value)
+{
+case x1:
+  code to execute;
+  break;
+case x2:
+  code to execute;
+  break;
+default:
+  code to execute;
+}
+```
+
+Ternary Operator<br/>
+conditional operator<br/>
+shorthand notation for making small, simple if decisions, usually just to assign a value to a variable
+```javascript
+condition ? return if true : return if false;
+
+var age = 64
+var admission = "Your cost: $" + (age < 60 ? "7.50" : "5.00");
+```
+
+== operator<br/>
+returns true if the values being compared are equal
+
+=== operator<br/>
+returns true only if the values and the data types being compared are the same
+
+testing and debugging code<br/>
+console.write()<br/>
+console.log()<br/>
+alert()
