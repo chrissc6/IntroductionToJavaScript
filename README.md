@@ -221,7 +221,7 @@ console.log(encodeURIComponent('?x=test'));
 //and in additional the characters which encodeURI doesn't encode
 ```
 
-Drop-Down List:
+Drop-Down List:<br/>
 select tag placed where you want the control to appear on the page.
 ```javascript
 <select id="dropdown"> 
