@@ -229,3 +229,57 @@ select tag placed where you want the control to appear on the page.
       <option value="2" selected>Google</option> 
     </select>
 ```
+
+### Lesson 6
+
+HTML5 lets you play audio from the browser without plug-ins
+
+Two audio formats that are free of any patent encumbrances are MP3 and OGG. <br/>
+All HTML5-compatible browsers support at least one of these formats. <br/>
+Developers offer two copies of every sound file used by their page or application.<br/>
+Public domain sound files you can use freely.
+
+See if the browser supports HTML5 audio<br/>
+object detection<br/>
+Determine whether or not the user's browser is capable of handling the code you intend to use
+```javascript
+if (window.HTMLAudioElement) {
+}
+```
+window.HTMLAudioElement property<br/>
+returns true if the browser can handle HTML5 audio
+
+define a player for playing audio files<br/>
+Creating an audio object
+```javascript
+var myAudioFile = document.createElement('audio');
+```
+
+Determine whether the browser can play MP3 sound files or OGG sound files<br/>
+.canPlayType Property<br/>
+Determine which type of file the browser can play.<br/>
+returns "" (a zero-length string) if the browser can't play that file type. <br/>
+Otherwise, it'll return maybe or probably.
+
+MP3<br/>
+audio/mpeg
+OGG<br/>
+audio/ogg; codecs="vorbis"
+
+codec is short for compressor/decompressor<br/>
+The component of the format that indicates the algorithm used to compress the file. <br/>
+The same algorithm decompresses the file for playback.
+
+setAttribute Method<br/>
+lets you set the value of any attribute in any tag via JavaScript<br/>
+HTML attributes are things inside HTML tags that provide information about that tag.
+```javascript
+element.setAttribute(attributename,value)
+```
+element:<br/>
+set or change the attribute or variable for a specific element that's already been identified with a getElementById() attribute
+attributename:<br/>
+assign a value<br/>
+must be a valid attribute for the tag type
+value:<br/>
+value you want to assign to the attribute

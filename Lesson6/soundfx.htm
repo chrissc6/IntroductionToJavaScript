@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <script>
+        // This code runs when page first opens.
+        // If the browser supports HTML5 audio, it creates a player.
+        if (window.HTMLAudioElement) {
+            var audioElement = document.createElement('audio');
+            // Choose sound file to play based on browser capabilities.
+            if (audioElement.canPlayType('audio/mpeg').length > 0) {
+                //Code for MP3 sound file goes here.
+                audioElement.setAttribute('src', 'sounds/canary.mp3');
+            }
+            console.log(audioElement, + "2")
+            if (audioElement.canPlayType('audio/ogg; codecs="vorbis"').length > 0) {
+                //Code for ogg sound file goes here.
+                audioElement.setAttribute('src', 'sounds/canary.ogg');
+            }
+        }
+
+        //This function only runs when called. It plays the
+        //sound file in the player, if the player exists.
+        function playsound() {
+            if (window.audioElement) {
+                audioElement.play();
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <button onclick="playsound()">Sample</button>
+</body>
+
+</html>
