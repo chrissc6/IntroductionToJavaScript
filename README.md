@@ -280,11 +280,11 @@ element:<br/>
 set or change the attribute or variable for a specific element that's already been identified with a getElementById() attribute
 attributename:<br/>
 assign a value<br/>
-must be a valid attribute for the tag type
+must be a valid attribute for the tag type<br/>
 value:<br/>
 value you want to assign to the attribute
 
-### Lesson 6
+### Lesson 7
 
 Global Variables<br/>
 defined outside of functions<br/>
