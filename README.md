@@ -166,3 +166,66 @@ if must be typed in lowercase.
 ```javascript
 if (condition) code to execute;
 ```
+
+### Lesson 5
+
+String Concatenation:<br/>
+we can assign strings to a variable and use concatenation to combine the variable to another string.<br/>
+use the + operator
+```javascript
+let myPet = 'dog';
+console.log('My favorite animal is the ' + myPet + '.');
+```
+
+URI (Uniform Resource Identifier):<br/>
+a string that refers to a resource. (URL)<br/>
+URNs, by contrast, refer to a resource by a name, in a given namespace, such as the ISBN of a book
+
+UTF-8 (UCS Transformation Format 8):<br/>
+World Wide Web's most common character encoding.<br/>
+Each character is represented by one to four bytes.<br/>
+UTF-8 is backward-compatible with ASCII and can represent any standard Unicode character.
+
+URLs must contain only a special subset of ASCII characters:<br/>
+Alphanumeric-
+```
+a b c d e f g h i j k l m n o p q r s t u v w x y z A B C D E F G H I J K L M N O P Q R S T U V W X Y Z 0 1 2 3 4 5 6 7 8 9 
+```
+Unreserved-
+```
+- _ . ~
+```
+Reserved-
+```
+! * ' ( ) ; : @ & = + $ , / ? % # [ ]
+```
+
+
+encodeURIComponent() function:<br/>
+makes the text that the user typed more palatable as a URL<br/>
+makes the URLs more compatible with older computers that had limited character sets or didn't treat spaces the same as more modern computers do.<br/>
+encodes a URI by replacing each instance of certain characters by one, two, three, or four escape sequences representing the UTF-8 encoding of the character<br/>
+(will only be four escape sequences for characters composed of two "surrogate" characters)
+```javascript
+// encodes characters such as ?,=,/,&,:
+console.log(encodeURIComponent('?x=шеллы'));
+// expected output: "%3Fx%3D%D1%88%D0%B5%D0%BB%D0%BB%D1%8B"
+
+console.log(encodeURIComponent('?x=test'));
+// expected output: "%3Fx%3Dtest"
+
+
+//encodeURI() function encodes special characters, except: , / ? : @ & = + $ #
+
+//encodeURIComponent() function encodes special characters 
+//and in additional the characters which encodeURI doesn't encode
+```
+
+Drop-Down List:
+select tag placed where you want the control to appear on the page.
+```javascript
+<select id="dropdown"> 
+      <option value="1">Bing</option> 
+      <option value="2" selected>Google</option> 
+    </select>
+```

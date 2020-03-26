@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Search My Site</title>
+    <script>
+        //Search a specific site rather than the entire Web.
+        function search() {
+            //Replace sample domain name below with your own domain name.
+            var site = "wikipedia.org";
+            //Get the text that the user typed into the textbox.
+            var lookfor = document.getElementById("txtlookfor").value;
+            //If the box wasn't empty do the search. 
+            if (lookfor.length > 0) {
+                //Look at the drop-down value and make search URL accordingly.
+                var ddchoice = document.getElementById("dropdown").value;
+                //Build URL for the search.
+                if (ddchoice == 1) {
+                    var query = "http://www.bing.com/search?q=" + encodeURIComponent(lookfor) + " site:" + site;
+                } else if (ddchoice == 1) {
+                    var query = "http://www.google.com/search?q=" + encodeURIComponent(lookfor) + " site:" + site;
+                } else {
+                    var query = "http://search.yahoo.com/search?p=" + encodeURIComponent(lookfor) + " site:" + site;
+                }
+                //Set Address bar equal to query.
+                location.href = query;
+                //this can replace location.href to open results in a new window
+                //var results = window.open(query, "results", "menubar=0, toolbar=0, status=0")
+            } else {
+                //If textbox was empty, show an alert.
+                alert("Please type the word or words for which you want to search.");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <p>Search this site:
+        <input type="text" id="txtlookfor" autofocus>
+        <!-- Show drop-down list -->
+        &nbsp;Choose engine:
+        <select id="dropdown">
+            <option value="1">Bing</option>
+            <!--Google the default selection -->
+            <option value="2" selected>Google</option>
+            <option value="3" selected>Yahoo</option>
+        </select>
+        <input type="button" onclick="search()" value="Go">
+    </p>
+</body>
+
+</html>

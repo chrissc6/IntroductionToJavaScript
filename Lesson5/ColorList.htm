@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <script type="text/javascript">
+        // from dropdownList.html
+        function changeColor() {
+            var selColor = document.getElementById("selColor");
+            var color = selColor.value;
+            document.body.style.backgroundColor = color;
+        } // end function
+    </script>
+</head>
+
+<body>
+    <form action="">
+        <h1>Please select a color</h1>
+        <fieldset>
+            <select id="selColor">
+                <option value="#FFFFFF">White</option>
+                <option value="#FF0000">Red</option>
+                <option value="#FFA500">Orange</option>
+                <option value="#FFFF00">Yellow</option>
+                <option value="#008000">Green</option>
+                <option value="#0000FF">Blue</option>
+                <option value="#4B0082">Indigo</option>
+                <option value="#EE82EE">Violet</option>
+                <option value="#000000">Black</option>
+                <option value="#808080">Gray</option>
+            </select>
+            <input type="button" value="change color" onclick="changeColor()" />
+        </fieldset>
+    </form>
+</body>
+
+</html>
+
+<!--
+Instant change no button needed    
+<body>
+    <form action="">
+        <h1>Please select a color</h1>
+        <fieldset>
+            <select id="selColor" onchange="changeColor()">
+                <option value="#FFFFFF">White</option>
+                <option value="#FF0000">Red</option>
+                <option value="#FFA500">Orange</option>
+                <option value="#FFFF00">Yellow</option>
+                <option value="#008000">Green</option>
+                <option value="#0000FF">Blue</option>
+                <option value="#4B0082">Indigo</option>
+                <option value="#EE82EE">Violet</option>
+                <option value="#000000">Black</option>
+                <option value="#808080">Gray</option>
+            </select>
+        </fieldset>
+    </form>
+</body>
+-->
