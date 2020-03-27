@@ -543,3 +543,145 @@ selects elements with a specific class attribute
 
 jQuery<br/>
 The most famous and most widely-used JavaScript library
+
+### Lesson 10
+
+Downloading jQuery https://jquery.com/download/
+
+Google CDN https://developers.google.com/speed/libraries/devguide#jquery
+
+Microsoft CDN https://www.asp.net/ajax/cdn#jQuery_Releases_on_the_CDN_0
+
+
+jQuery <br/>
+jQuery is a JavaScript library<br/>
+make it much easier to use JavaScript<br/>
+a library of prewritten JavaScript code that allows you to do more with JavaScript using relative short, simple code<br/>
+jQuery's motto is Write less, do more<br/>
+jQuery is a free external file of JavaScript code that you can use in your own site for free<br/>
+jQuery takes a lot of common tasks that require many lines of JavaScript code to accomplish, and wraps them into methods that you can call with a single line of code.<br/>
+jQuery also simplifies a lot of the complicated things from JavaScript, like AJAX calls and DOM manipulation
+
+The jQuery library contains the following features:<br/>
+ * HTML/DOM manipulation
+ * CSS manipulation
+ * HTML event methods
+ * Effects and animations
+ * AJAX
+ * Utilities
+
+Versions 
+
+Version1<br/>
+Versions that start with 1 continue to provide support for Internet Explorer versions 6, 7, and 8
+
+Version2<br/>
+Versions starting with 2 offer all the same tools and capabilities that versions starting 1<br/>
+Version 2 does not include code that allows all jQuery features to work in those older Internet Explorer versions 6, 7, and 8
+
+MinVersion<br/>
+minified or min version<br/>
+everything that can be done to minimize the file size has been done<br/>
+The production version removes all of the line breaks and indents to make the file smaller and faster
+
+internal JavaScript code <br/>
+JavaScript code is "inside" the page in which it's executed 
+
+external JavaScript code<br/>
+Any JavaScript code can be stored in an external file and linked to the current page using a <script src="..."> tag<br/>
+put the JavaScript code in its own separate file, then just link each page to the external file<br/>
+To link to an external JavaScript file, you use a <script> tag with an src (source) attribute
+```javascript
+<script src="path"></script>
+```
+
+CDN (Content Development Network)<br/>
+a system of distributed servers (network) that deliver pages and other web content to a user, based on the geographic locations of the user, the origin of the webpage and the content delivery server<br/>
+most people use jQuery from a CDN<br/>
+As an alternative to downloading and serving the file yourself, you can serve it from a CDN (Content Development Network)
+```javascript
+//Google's CDN
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">
+</script>
+
+//Microsoft's CDN
+<script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.1.min.js">
+</script>
+```
+
+Using jQuery <br/>
+use the $ symbol<br/>
+Some people think of the dollar sign as meaning using jQuery or get from the jQuery library or just get<br/>
+the $ is basically telling the Web browser to look in the jQuery library for the JavaScript code to execute<br/>
+it's important that any elements in the page that are affected by jQuery code actually exist in the page, fully rendered on the screen, before jQuery attempts to act on the element.
+
+anonymous function<br/>
+one or more lines of code that are executed in sequence<br/>
+called an anonymous function because it doesn't have a specific name
+
+document.ready<br/>
+Virtually all jQuery code that you write yourself should be placed inside a $(document).ready(function () { . . . }); block. <br/>
+jQuery syntax for when the page is fully loaded and ready<br/>
+jQuerys way of saying Let the entire page load before trying to execute any jQuery code<br/>
+the document.ready code is always the same<br/>
+all of the jQuery code on a page is typically placed inside the curly braces and parens of the document.ready block (or its shorthand equivalent)
+
+```javascript
+<script>
+$(document).ready(function() {
+ // jQuery code to execute after page load
+});
+</script>
+```
+
+All the jQuery code for any given page is usually placed inside the curly braces and parentheses of that block to ensure that none of the code tries to execute before the page is ready for code execution
+
+```javascript
+<script>
+$(function() {
+  // jQuery code to execute after page load
+});
+</script>
+```
+The longer document.ready() syntax at least gives you some clue as to what the code means.
+
+Writing jQuery Code<br/>
+you rely on the $ to call prewritten code from the jQuery library
+```javascript
+$("selector").event(function(){
+  code to execute;
+ }); 
+```
+
+selector <br/>
+the element, or type of element, that will call the code<br/>
+having the option to write code that applies to multiple elements on the page is one of jQuery's best features<br/>
+you can put just about any CSS selector in place of selector to apply the code to any number of elements on a page, just as you can use CSS selectors to apply
+
+event <br/>
+the name of the action that, when performed on the element or element type, will call the code
+
+jQuery Selectors<br/>
+describes the element or elements that trigger an event or are acted upon by jQuery<br/>
+If the selector matches an element type, then the code applies to all elements of that type<br/>
+selector naming scheme similar to CSS<br/>
+selector syntax that you use to target the function is the same as the selector syntax that you use for targeting CSS style rules
+
+In CSS, you can use # in a selector to apply the style to the element that has that ID name. <br/>
+The same concept applies to jQuery.
+
+best of both worlds with selectors<br/>
+write a jQuery function that applies to any one element on the page, or to many elements
+
+jQuery Events<br/>
+describes an action that must be performed to fire (execute) the jQuery code
+
+jQuery Special Effects<br/>
+built-in effects<br/>
+jQuery effects are written to work even with older Web browsers<br/>
+The ability to apply JavaScript in much the same way you can apply CSS is one of jQuery's best features
+```javascript
+$("selector").effect(value);
+```
+value is optional and can be omitted.<br/>
+If included, it has to be a valid jQuery keyword, like slow or fast, or a number expressing the number of milliseconds.
