@@ -460,3 +460,86 @@ testing and debugging code<br/>
 console.write()<br/>
 console.log()<br/>
 alert()
+
+### Lesson 9
+
+JavaScript Timers (timing events)<br/>
+put time delays on code execution<br/>
+passage of time, rather than a mouse click or other user activity, causes the event<br/>
+Timing events are also used for slideshows and many kinds of animated transition events.
+
+
+setTimeout("function", milliseconds)<br/>
+Executes the named function once, after waiting the number of seconds specified by milliseconds.<br/>
+call some function once, after a time delay.
+
+setInterval("function", milliseconds)<br/>
+Executes code or a function repeatedly at specific time intervals. <br/>
+It's kind of like a loop but with a time delay each time through the loop.<br/>
+call some function repeatedly, with a time delay between each call.
+
+Half a second = 500 milliseconds
+
+```javascript
+var name = setInterval("function", milliseconds):
+
+//clearInterval or clearTimeout to stop the timer
+clearInterval(name)
+clearTimeout(name)
+```
+
+window.onload()<br/>
+Make sure everything is loaded<br/>
+The onload event occurs when an object has been loaded.<br/>
+The load event fires when a given resource has loaded.<br/>
+call some function or execute some code after the entire Web page has been fully downloaded.
+```javascript
+window.onload = function() {
+   JavaScript code to execute on page load;
+}
+```
+
+CSS style classes<br/>
+transition property that allows you to animate the application of a CSS property by extending the time it takes for the property to be applied.
+
+CSS fadein 
+``` CSS
+/* Style to fadein */
+    .fadein {
+      opacity: 1;
+      transition: all ease-out 0.25s;
+    }
+```
+
+CSS fadeout 
+``` CSS
+/* Style to fadeout */
+    .fadeout {
+      opacity: 0;
+      transition: all ease-out 0.25s;
+    }
+```
+
+The opacity property specifies the opacity/transparency of an element.
+```CSS
+img {
+  opacity: 0.5;
+}
+
+img:hover {
+  opacity: 1.0;
+}
+```
+
+CSS .class Selector<br/>
+selects elements with a specific class attribute
+```CSS
+//class="intro"
+
+.intro {
+  background-color: yellow;
+}
+```
+
+jQuery<br/>
+The most famous and most widely-used JavaScript library

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Slideshow</title>
+    <style>
+        /* CSS code to style the picture container and images */
+        #slideshow {
+            /* Height of box should roughly match image heights */
+            height: 375px;
+            text-align: center;
+        }
+
+        /* Size each image to fit container height */
+        #slideshow img {
+            height: 100%;
+        }
+    </style>
+    <script>
+        //Global variables visible to all code in page.
+        //Subscript of first image to show.
+        var subscript = 0;
+        //Number of seconds for each picture to show.
+        var pictime = 5;
+        //Global variable for state of the timer.
+        var isrunning
+
+        //List all of your image filenames. Filenames don't have to follow any pattern.
+        var images = new Array()
+        images[0] = "pixs/candle.jpg";
+        images[1] = "pixs/chip.jpg";
+        images[2] = "pixs/fire.png";
+        images[3] = "pixs/paint.png";
+        images[4] = "pixs/water.png";
+        //Show the next image in the array.  
+        function nextimg() {
+            //Calculate next subscript (uses ternary operator).
+            subscript = (subscript == images.length - 1) ? 0 : subscript + 1;
+            var imagefile = images[subscript];
+            //Find img tag and change its src= attribute.
+            var img = document.getElementById("slideimg");
+            img.src = imagefile;
+        }
+
+        //Make sure everything is loaded before starting timer.
+        window.onload = function () {
+            stimer = setInterval("nextimg()", pictime * 1000);
+            isrunning = true;
+        }
+
+        //Start or stop the slideshow based on current state.
+        function startstop() {
+            //Get the id of the button so we change its text.
+            var btn = document.getElementById("btnStopGo");
+            //If the slideshow is running...
+            if (isrunning) {
+                //...stop the slide timer
+                clearInterval(stimer);
+                //...set isrunning to false
+                isrunning = false;
+                //...change button text to Start.
+                btn.value = "Start"
+            } else {
+                //Else, if the slideshow isn't running, show next image...
+                nextimg()
+                //...Restart the timer
+                stimer = setInterval("nextimg()", pictime * 1000);
+                //...set isrunning to true
+                isrunning = true;
+                //...change button text to Stop.
+                btn.value = "Stop";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- HTML to display the pictures -->
+    <div id="slideshow">
+        <img id="slideimg" src="pixs/candle.jpg" alt="">
+        <br />
+        <input type="button" onclick="startstop()" value="Stop" id="btnStopGo" />
+    </div><!-- End slideshow -->
+</body>
+
+</html>
