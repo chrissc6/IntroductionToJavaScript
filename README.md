@@ -738,3 +738,28 @@ Returns true if the specified element is visible. Otherwise, it returns false.
 
 jQuery plug-ins<br/>
 incorporate code that's been developed and tested by others into your own site
+
+### Lesson 12
+
+jQuery plugins<br/>
+jQuery code written by someone else that you can "plug in" to your page<br/>
+There is no government or private company running quality control on them to make sure they all meet some predefined standard or come with user-friendly instructions
+
+jQuery Plugin Registry: https://plugins.jquery.com/
+
+Roundabout <br/>
+a jQuery responsive touch carousel<br/>
+https://github.com/kenwheeler/roundabout
+
+responsive<br/>
+it scales well to the user's browser window, which generally means it's good for all sizes of screens
+
+carousel <br/>
+a slider type of control
+
+Free as in Bacon<br/>
+Years ago, when open source and shared software were in their infancy, people use to say that the code was free as in free beer.<br/>
+http://wiki.c2.com/?FreeAsInBeer
+
+MIT and GPL licenses<br/>
+you can use it in your site and not claim to be the owner, author, or copyright holder
