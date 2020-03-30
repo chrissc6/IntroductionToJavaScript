@@ -584,6 +584,7 @@ minified or min version<br/>
 everything that can be done to minimize the file size has been done<br/>
 The production version removes all of the line breaks and indents to make the file smaller and faster
 
+
 internal JavaScript code <br/>
 JavaScript code is "inside" the page in which it's executed 
 
@@ -645,6 +646,7 @@ $(function() {
 ```
 The longer document.ready() syntax at least gives you some clue as to what the code means.
 
+
 Writing jQuery Code<br/>
 you rely on the $ to call prewritten code from the jQuery library
 ```javascript
@@ -685,3 +687,54 @@ $("selector").effect(value);
 ```
 value is optional and can be omitted.<br/>
 If included, it has to be a valid jQuery keyword, like slow or fast, or a number expressing the number of milliseconds.
+
+### Lesson 11
+
+Collapsible Panel control<br/>
+common control in modern Web pages and mobile apps<br/>
+basically a bar that shows some brief text information, click or tap the bar<br/>
+causing a panel to slide down and display the detailed information
+
+event handler<br/>
+event handlers in jQuery are different from event handlers in JavaScript<br/>
+inside the document.ready block:
+```javascript
+$(document).ready(function () {
+            $('elements(s)').event(function () {
+                
+            });
+        });
+```
+
+elements <br/>
+replaced with a selector that identifies the element or elements to which the CSS class should be applied
+
+toggle<br/>
+used for any value that can switch between two states
+
+.toggleClass<br/>
+allows it to switch between CSS style classes
+
+slideToggle<br/>
+allows you to control the speed at which an element on the page slides down into view or slides back up out of view
+
+next method<br/>
+gets the next element below any specified element<br/>
+returns an object with two properties done and value. <br/>
+You can also provide a parameter to the next method to send a value to the generator.
+
+Accordion Control<br/>
+fairly common in mobile apps, and are also sometimes used in websites<br/>
+like a stack of collapsible panels
+
+conditions in jQuery<br/>
+the syntax is exactly the same as getting JavaScript to do it
+
+$(element).is(':hidden') <br/>
+Returns true if the specified element is hidden. Otherwise, it returns false.
+
+$(element).is(':visible') <br/>
+Returns true if the specified element is visible. Otherwise, it returns false.
+
+jQuery plug-ins<br/>
+incorporate code that's been developed and tested by others into your own site
